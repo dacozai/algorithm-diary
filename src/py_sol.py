@@ -1,4 +1,5 @@
 from typing import Set, Dict, Tuple, Sequence, List, Any
+import math
 
 class Solution:
   def twoSum(self, nums: List[int], target: int) -> List[int]:
@@ -159,6 +160,32 @@ class Solution:
 
     return num
 
+  def searchInsert(self, nums: List[int], target: int) -> int:
+    if target is 0: return 0
+    arr_len = len(nums)
+    indx = int(arr_len/2) 
+    base = 0
+    while True:
+      if nums[indx] == target:  return indx
+      elif nums[indx] > target:
+        if indx == 0:  return 0 
+        else:
+          if nums[indx-1] < target:
+            return indx
+          elif nums[indx-1] == target:
+            return indx-1
+          else:
+            indx = math.ceil((indx - 1 - base)/2) + base
+      else:
+        if indx == arr_len - 1: 
+          return arr_len
+        else:
+          if nums[indx+1] >= target: 
+            return indx+1
+          else:
+            base = indx
+            indx = math.floor((arr_len - (indx+1))/2) + indx + 1
+      
 
 
 
