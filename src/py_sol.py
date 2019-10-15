@@ -1,7 +1,14 @@
-from typing import Set, Dict, Tuple, Sequence, List, Any
+from typing import TypeVar, Set, Dict, Tuple, Sequence, List, Any
+ListNode = TypeVar('ListNode')
 import math
 
+class ListNode:
+  def __init__(self, x):
+    self.val = x
+    self.next = None
+
 class Solution:
+  # 56 ms	14.9 MB
   def twoSum(self, nums: List[int], target: int) -> List[int]:
     """
     Name: One-Pass solution
@@ -36,6 +43,7 @@ class Solution:
       hash_dict[value] = indx
     return []
   
+  # 148 ms	15.5 MB
   def maxArea(self, height: List[int]) -> int:
     right = len(height) - 1
     maxarea = 0
@@ -50,6 +58,7 @@ class Solution:
 
     return maxarea
 
+  # 36 ms	 14 MB	
   def reverse(self, x: int) -> int:
     if x > 0:   
       num =  int(str(x)[::-1])  
@@ -59,6 +68,7 @@ class Solution:
     if num > 2**31 - 1 or num < 2**31 * -1: return 0
     return num
   
+  # 32 ms	 13.9 MB
   def myAtoi(self, s: str) -> int:
     MAXIMUM = 2147483647
     MINIMUM = -2147483648
@@ -130,10 +140,12 @@ class Solution:
     
     return int(float(num))
 
+  # 56 ms	 14 MB
   def isPalindrome(self, x: int) -> bool:
     x = str(x)
     return x == "".join(list(reversed(x)))
 
+  # 52 ms  14 MB
   def romanToInt(self, s: str) -> int:
     roman_tb = {
       'I': 1,
@@ -185,7 +197,31 @@ class Solution:
           else:
             base = indx
             indx = math.floor((arr_len - (indx+1))/2) + indx + 1
-      
+
+  """
+  36ms  13.9 MB
+  It is possible to write through while loop and it might be faster than recurrsion method
+  """      
+  def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
+
+    if not l1 and not l2:
+      return
+    elif l1 and not l2:
+      return l1
+    elif l2 and not l1:
+      return l2
+    
+    if l1.val <= l2.val:
+      arr = ListNode(l1.val)
+      arr.next = self.mergeTwoLists(l1.next,l2)
+    else:
+      arr = ListNode(l2.val)
+      arr.next = self.mergeTwoLists(l1,l2.next)
+    
+    return arr
+
+  def myPow(self, x: float, n: int) -> float:
+    pass
 
 
 
