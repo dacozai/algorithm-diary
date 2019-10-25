@@ -260,6 +260,11 @@ class Solution:
       
     return ans
 
+  """
+  92 ms(92.71%)	15.4 MB(5.74%)
+  O(N), O(1): the key in this question is not using del built-in function, since del is O(n)
+  Adding del will increase approximately 60ms 
+  """
   def removeDuplicates(self, nums: List[int]) -> int:
     if nums == []: return 0
 
@@ -271,6 +276,25 @@ class Solution:
 
     nums = nums[0:pos+1]
     return pos+1 
+
+  """
+  32 ms(98.21%)	13.8 MB(6.06%)
+  O(N), O(1): trying to avoid using `del` as well. It will improve the algorithm by about 10-12 ms  
+  """
+  def removeElement(self, nums: List[int], val: int) -> int:
+    if nums == []: return 0
+    
+    pos = 0
+    for i in range(0,len(nums)):
+      if nums[i] != val:
+        nums[pos] = nums[i]
+        pos += 1
+
+    nums = nums[0:pos+1]
+    return pos 
+
+
+
 
 
 

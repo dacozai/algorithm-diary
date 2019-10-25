@@ -11,4 +11,5 @@ assert( 5 == sol.removeDuplicates(input_var) )
 input_var = [0,0]
 assert( 1 == sol.removeDuplicates(input_var) )
 
+
 print("All pass")
