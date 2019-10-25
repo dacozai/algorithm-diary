@@ -260,6 +260,17 @@ class Solution:
       
     return ans
 
+  def removeDuplicates(self, nums: List[int]) -> int:
+    if nums == []: return 0
+
+    pos = 0
+    for i in range(1,len(nums)):
+      if nums[pos] < nums[i]:
+        pos += 1
+        nums[pos] = nums[i]
+
+    nums = nums[0:pos+1]
+    return pos+1 
 
 
 
