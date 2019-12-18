@@ -8,24 +8,7 @@ class ListNode:
     self.next = None
 
 class Solution:
-  # 56 ms	14.9 MB
-  def twoSum(self, nums: List[int], target: int) -> List[int]:
-    """
-    Name: One-Pass solution
-    hash_dict: hash table to record number
-    Time Complexity: O(n)
-    Space Complexity: O(n)
-    """
-    hash_dict = {}
-    for indx, value in enumerate(nums):
-      remain = target - value
-      if remain in hash_dict:
-        if hash_dict[remain] > indx:
-          return [indx, hash_dict[remain]] 
-        return [hash_dict[remain], indx]
-      hash_dict[value] = indx
-    return []
-  
+
   def twoSum_sorted(self, numbers: List[int], target: int) -> List[int]:
     """
     Name: One-Pass solution
