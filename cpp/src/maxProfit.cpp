@@ -33,7 +33,7 @@ int maxProfit_0(std::vector<int>& prices) {
  * faster than 98.46% - 66.92%, less than 99.08% - 100% 
  * O(n) ; O(1)
 */
-int maxProfit(vector<int>& prices) {
+int maxProfit(std::vector<int>& prices) {
   int i;
   int max_profit = 0;
   int min_price = INT_MAX;

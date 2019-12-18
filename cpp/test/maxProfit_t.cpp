@@ -31,6 +31,5 @@ void Test_maxProfit() {
   std::vector<int> vect5 (arr5, arr5 + sizeof(arr5) / sizeof(arr5[0]) );
   assert(maxProfit(vect5) == 0);
 
-  std::cout << "GREAT!" << std::endl;
   return;
 }

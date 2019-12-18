@@ -1,5 +1,5 @@
 LIBS = `sdl2-config --libs` -lm
-CFLAGS = `sdl2-config --cflags` \
+CFLAGS = `-std=c++17 sdl2-config --cflags` \
 						-O2 -Wall -Wextra -Werror -pedantic -Wfloat-equal -ansi $(LIBS)
 
 DEBUG = -g3
