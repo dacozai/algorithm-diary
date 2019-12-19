@@ -1,9 +1,9 @@
 LIBS = `sdl2-config --libs` -lm
-CFLAGS = `-std=c++17 sdl2-config --cflags` \
+CFLAGS = `sdl2-config --cflags` \
 						-O2 -Wall -Wextra -Werror -pedantic -Wfloat-equal -ansi $(LIBS)
 
 DEBUG = -g3
-OPTIM = -O2
+OPTIM = -std=c++17 -O2
 INCLUDES=-I./include
 SRC_DIR := ./src
 TEST_DIR := ./test
