@@ -1,19 +1,25 @@
-#include <vector>
 #include <iostream>
 #include <cstdlib>
 
+class Rectangle {
+    int width, height;
+  public:
+    void set_values (int,int);
+    int area (void);
+} rect;
+
+void Rectangle::set_values (int x, int y) {
+  width = x;
+  height = y;
+}
+
+int Rectangle::area () {
+  return width * height;
+}
+
 int main () {
-  /*
-  std::vector<int> vec;
-  vec.push_back(10);
-  vec.push_back(20);
-  vec.push_back(30);
-  */
-  std::vector<int> vec {1,2,3};
-
-  for (int x: vec)
-    std::cout << x << std::endl;
-
+  rect.set_values(3,4);
+  std::cout << rect.area() << std::endl;
 
   return 0;
 }
