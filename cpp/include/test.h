@@ -5,6 +5,10 @@ std::vector<int> twoSum(std::vector<int>&, int);
 void Test_twoSum();
 bool chkVecAreSame(std::vector<int> a, std:: vector<int> b);
 
+/* Question 26. removeDuplicates*/
+int removeDuplicates(std::vector<int>&);
+void Test_removeDuplicates();
+
 /* Question 53. maxSubArray */
 int maxSubArray(std::vector<int>&);
 void Test_maxSubArray();
