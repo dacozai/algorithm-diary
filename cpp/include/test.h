@@ -18,8 +18,14 @@ int maxProfit(std::vector<int>&);
 int maxProfit_0(std::vector<int>&);
 void Test_maxProfit();
 
-
 /* Question 121. maxProfit */
 int maxProfit_II0(std::vector<int>&);
 int maxProfit_II(std::vector<int>&);
 void Test_maxProfitII();
+
+/* Question 189 rotateArray */
+void rotate(std::vector<int>&, int);
+void Test_rotate();
+
+
+

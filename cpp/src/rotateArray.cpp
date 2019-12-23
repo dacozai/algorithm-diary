@@ -1,7 +1,7 @@
 #include "test.h"
-/** Question no.26 easy
+/** Question no.189 easy
  * Author : Li-Han, Chen; 陳立瀚
- * Date   : 18th, December, 2019 
+ * Date   : 23th, December, 2019 
  * Source : https://leetcode.com/problems/rotate-array/
  * Given an array, rotate the array to the right by k steps, where k is non-negative.
  * 
@@ -13,7 +13,7 @@
  * O(n) ; O(1)
 */
 
-void rotate(vector<int>& nums, int k) {
+void rotate(std::vector<int>& nums, int k) {
   int const LEN = nums.size();
   k = k%LEN;
   int ct = 0;
