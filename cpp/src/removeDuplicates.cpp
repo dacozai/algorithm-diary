@@ -2,7 +2,7 @@
 /** Question no.26 easy
  * Author : Li-Han, Chen; 陳立瀚
  * Date   : 18th, December, 2019 
- * Source : https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+ * Source : https://leetcode.com/problems/remove-duplicates-from-sorted-list/
  * Given a sorted array nums, remove the duplicates in-place such that each element appear only once 
  * and return the new length.
  * 
