@@ -1,5 +1,11 @@
 #include <vector>
 
+struct ListNode {
+  int val;
+  ListNode *next;
+  ListNode(int x) : val(x), next(NULL) {}
+};
+
 /* Question 1. twoSum */
 std::vector<int> twoSum(std::vector<int>&, int);
 void Test_twoSum();
@@ -27,5 +33,6 @@ void Test_maxProfitII();
 void rotate(std::vector<int>&, int);
 void Test_rotate();
 
-
+/* Question 237 */
+void deleteNode(ListNode* node);
 
