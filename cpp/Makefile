@@ -6,9 +6,15 @@ DEBUG = -g3
 OPTIM = -std=c++17 -O2
 INCLUDES=-I./include
 SRC_DIR := ./src
+ARRAY_DIR := ./src/array
+LINKLIST := ./src/linkedList
+
 TEST_DIR := ./test
+ARRAY_TEST_DIR := ./test/array
+LINKLIST_TEST := ./test/linkedList
 LIB_DIR := ./lib
-SOURCES_IN := ./main.cpp $(SRC_DIR)/*.cpp $(TEST_DIR)/*.cpp $(LIB_DIR)/*.cpp
+SOURCES_IN := ./main.cpp $(SRC_DIR)/*.cpp $(ARRAY_DIR)/*.cpp $(LINKLIST)/*.cpp\
+													 $(TEST_DIR)/*.cpp $(ARRAY_TEST_DIR)/*.cpp $(LINKLIST_TEST)/*.cpp $(LIB_DIR)/*.cpp
 
 TARGET_IN = wtf 
 
