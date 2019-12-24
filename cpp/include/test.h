@@ -11,6 +11,11 @@ std::vector<int> twoSum(std::vector<int>&, int);
 void Test_twoSum();
 bool chkVecAreSame(std::vector<int> a, std:: vector<int> b);
 
+/* Question 19. removeNthFromEnd */
+ListNode* removeNthFromEnd(ListNode*, int);
+void Test_removeNthFromEnd();
+
+
 /* Question 26. removeDuplicates*/
 int removeDuplicates(std::vector<int>&);
 void Test_removeDuplicates();

@@ -5,6 +5,9 @@ void run(int Q_number) {
     case 1:
       Test_twoSum();
       break;
+    case 19:
+      Test_removeNthFromEnd();
+      break;
     case 26:
       Test_removeDuplicates();
       break;
