@@ -7,7 +7,8 @@ OPTIM = -std=c++17 -O2
 INCLUDES=-I./include
 SRC_DIR := ./src
 TEST_DIR := ./test
-SOURCES_IN := ./main.cpp $(SRC_DIR)/*.cpp $(TEST_DIR)/*.cpp 
+LIB_DIR := ./lib
+SOURCES_IN := ./main.cpp $(SRC_DIR)/*.cpp $(TEST_DIR)/*.cpp $(LIB_DIR)/*.cpp
 
 TARGET_IN = wtf 
 

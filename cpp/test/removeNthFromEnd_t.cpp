@@ -7,14 +7,13 @@
 
 void Test_removeNthFromEnd() {
   /* LeetCode Test */
-  int arr[5] = {1,2,3,4,5};
-  ListNode p = ListNode(arr[0]);
-  for (int i=1;i<5;i++) {
-    p.next = &ListNode(arr[i]); 
-    p = p.next;
-  }
-  ListNode* ans = removeNthFromEnd(&p,2);
-
+  int k = 2;
+  int arr[] = {1,2,3,4,5};
+  ListNode* testcase = arrayToList(arr, 5); 
+  removeNthFromEnd(testcase, k);
+  int g[] = {1,2,3,5};
+  ListNode* goal = arrayToList(g, 4); 
+  assert(cmpTwoLinkedLists(&testcase, &goal));
 
   return;
 }

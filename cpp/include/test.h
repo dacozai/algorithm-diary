@@ -1,10 +1,5 @@
 #include <vector>
-
-struct ListNode {
-  int val;
-  ListNode *next;
-  ListNode(int x) : val(x), next(NULL) {}
-};
+#include "general.h"
 
 /* Question 1. twoSum */
 std::vector<int> twoSum(std::vector<int>&, int);
