@@ -4,11 +4,15 @@
 /* Question 1. twoSum */
 std::vector<int> twoSum(std::vector<int>&, int);
 void Test_twoSum();
-bool chkVecAreSame(std::vector<int> a, std:: vector<int> b);
+bool chkVecAreSame(std::vector<int>, std:: vector<int>);
 
 /* Question 19. removeNthFromEnd */
 ListNode* removeNthFromEnd(ListNode*, int);
 void Test_removeNthFromEnd();
+
+/* Question 21. mergeTwoLists */
+ListNode* mergeTwoLists(ListNode*, ListNode*);
+void Test_mergeTwoLists();
 
 /* Question 26. removeDuplicates*/
 int removeDuplicates(std::vector<int>&);
@@ -32,10 +36,10 @@ void Test_maxProfitII();
 void rotate(std::vector<int>&, int);
 void Test_rotate();
 
-/* Question 206 */
+/* Question 206 reverseList */
 ListNode* reverseList(ListNode*);
 void Test_reverseList();
 
-/* Question 237 */
+/* Question 237 deleteNode */
 void deleteNode(ListNode*);
 

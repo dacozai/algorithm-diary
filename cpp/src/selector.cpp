@@ -8,6 +8,9 @@ void run(int Q_number) {
     case 19:
       Test_removeNthFromEnd();
       break;
+    case 21:
+      Test_mergeTwoLists();
+      break;
     case 26:
       Test_removeDuplicates();
       break;
@@ -24,9 +27,6 @@ void run(int Q_number) {
       Test_rotate();
       break;
     case 206:
-      Test_reverseList();
-      break;
-    case 237:
       Test_reverseList();
       break;
   }
