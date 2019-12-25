@@ -6,6 +6,10 @@ std::vector<int> twoSum(std::vector<int>&, int);
 void Test_twoSum();
 bool chkVecAreSame(std::vector<int>, std:: vector<int>);
 
+/* Question2 */
+ListNode* addTwoNumbers(ListNode*, ListNode*);
+void Test_addTwoNumbers();
+
 /* Question 19. removeNthFromEnd */
 ListNode* removeNthFromEnd(ListNode*, int);
 void Test_removeNthFromEnd();
