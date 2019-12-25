@@ -23,6 +23,12 @@ void run(int Q_number) {
     case 189:
       Test_rotate();
       break;
+    case 206:
+      Test_reverseList();
+      break;
+    case 237:
+      Test_reverseList();
+      break;
   }
   return;
 }

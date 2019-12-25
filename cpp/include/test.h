@@ -10,7 +10,6 @@ bool chkVecAreSame(std::vector<int> a, std:: vector<int> b);
 ListNode* removeNthFromEnd(ListNode*, int);
 void Test_removeNthFromEnd();
 
-
 /* Question 26. removeDuplicates*/
 int removeDuplicates(std::vector<int>&);
 void Test_removeDuplicates();
@@ -33,6 +32,10 @@ void Test_maxProfitII();
 void rotate(std::vector<int>&, int);
 void Test_rotate();
 
+/* Question 206 */
+ListNode* reverseList(ListNode*);
+void Test_reverseList();
+
 /* Question 237 */
-void deleteNode(ListNode* node);
+void deleteNode(ListNode*);
 
