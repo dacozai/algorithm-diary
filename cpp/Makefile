@@ -9,15 +9,18 @@ SRC_DIR := ./src
 ARRAY_DIR := ./src/array
 LINKLIST := ./src/linkedList
 TREE := ./src/tree
+DP := ./src/dp
 
 TEST_DIR := ./test
 ARRAY_TEST_DIR := ./test/array
 LINKLIST_TEST := ./test/linkedList
 TREE_TEST := ./test/tree
+DP_TEST := ./test/dp
+
 LIB_DIR := ./lib
 SOURCES_IN := ./main.cpp $(SRC_DIR)/*.cpp $(ARRAY_DIR)/*.cpp $(LINKLIST)/*.cpp\
 													 $(TEST_DIR)/*.cpp $(ARRAY_TEST_DIR)/*.cpp $(LINKLIST_TEST)/*.cpp\
-													 $(TREE)/*.cpp $(TREE_TEST)/*.cpp $(LIB_DIR)/*.cpp
+													 $(TREE)/*.cpp $(TREE_TEST)/*.cpp $(DP)/*.cpp $(DP_TEST)/*.cpp $(LIB_DIR)/*.cpp
 
 TARGET_IN = wtf 
 POINTER_IN = ptr 

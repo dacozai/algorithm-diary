@@ -26,6 +26,10 @@ void Test_removeDuplicates();
 int maxSubArray(std::vector<int>&);
 void Test_maxSubArray();
 
+/* Question 70. climbStairs */
+int climbStairs(int);
+void Test_climbStairs();
+
 /* Question 104. maxDepth */
 int maxDepth(TreeNode*);
 void Test_maxDepth();
