@@ -26,9 +26,9 @@ $(TARGET_IN): $(SOURCES_IN)
 	rm -f $(TARGET_IN) 
 	$(CC) $(SOURCES_IN) $(DEBUG) $(OPTIM) $(INCLUDES) -o $(TARGET_IN)
 
-$(POINTER_IN): ./pointer_notes.cpp
+$(POINTER_IN): ./ow/pointer_notes.cpp
 	rm -f $(POINTER_IN)
-	$(CC) ./pointer_notes.cpp $(DEBUG) -o $(POINTER_IN) 
+	$(CC) ./ow/pointer_notes.cpp $(DEBUG) -o $(POINTER_IN) 
 	./$(POINTER_IN)
 
 clean:
