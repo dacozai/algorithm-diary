@@ -20,6 +20,9 @@ void run(int Q_number) {
     case 53:
       Test_maxSubArray();
       break;
+    case 104:
+      Test_maxDepth();
+      break;
     case 121:
       Test_maxProfit();
       break;

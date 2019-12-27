@@ -8,13 +8,16 @@ INCLUDES=-I./include
 SRC_DIR := ./src
 ARRAY_DIR := ./src/array
 LINKLIST := ./src/linkedList
+TREE := ./src/tree
 
 TEST_DIR := ./test
 ARRAY_TEST_DIR := ./test/array
 LINKLIST_TEST := ./test/linkedList
+TREE_TEST := ./test/tree
 LIB_DIR := ./lib
 SOURCES_IN := ./main.cpp $(SRC_DIR)/*.cpp $(ARRAY_DIR)/*.cpp $(LINKLIST)/*.cpp\
-													 $(TEST_DIR)/*.cpp $(ARRAY_TEST_DIR)/*.cpp $(LINKLIST_TEST)/*.cpp $(LIB_DIR)/*.cpp
+													 $(TEST_DIR)/*.cpp $(ARRAY_TEST_DIR)/*.cpp $(LINKLIST_TEST)/*.cpp\
+													 $(TREE)/*.cpp $(TREE_TEST)/*.cpp $(LIB_DIR)/*.cpp
 
 TARGET_IN = wtf 
 POINTER_IN = ptr 
