@@ -53,6 +53,10 @@ void Test_maxProfitII();
 void rotate(std::vector<int>&, int);
 void Test_rotate();
 
+/* Question 198 rob */
+int rob(std::vector<int>&);
+void Test_rob();
+
 /* Question 206 reverseList */
 ListNode* reverseList(ListNode*);
 void Test_reverseList();
