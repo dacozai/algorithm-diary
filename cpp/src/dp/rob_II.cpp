@@ -18,11 +18,14 @@
  * faster than 100%, less than 100% 
  * O(N) O(1)
 */
-int rob(std::vector<int>& nums) {
+int robII(std::vector<int>& nums) {
   if (nums.size() == 0) return 0;
   if (nums.size() == 1) return nums[0];
-  
-  int arr[nums.size()][2] = {};
+
+  int **arr;
+  arr = new int *[nums.size()];
+  for (int i=0;i<nums.size();i++)
+    arr[i] = new int[2];
   arr[1][1] = nums[0];
   int i;
   for (i = 2; i < nums.size(); i++) {
