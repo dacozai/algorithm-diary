@@ -18,7 +18,6 @@
  * O(N) O(N)
 */
 
-
 std::vector<std::string> fizzBuzz(int n) {
   std::vector<std::string> v;
   for (int i=1;i<=n;i++) {
