@@ -1,4 +1,5 @@
 #include <vector>
+#include <cstring>
 #include "general.h"
 
 /* Question 1. twoSum */
@@ -9,6 +10,10 @@ bool chkVecAreSame(std::vector<int>, std:: vector<int>);
 /* Question2 */
 ListNode* addTwoNumbers(ListNode*, ListNode*);
 void Test_addTwoNumbers();
+
+/* Question4 */
+int lengthOfLongestSubstring(std::string);
+void Test_lengthOfLongestSubstring();
 
 /* Question 19. removeNthFromEnd */
 ListNode* removeNthFromEnd(ListNode*, int);

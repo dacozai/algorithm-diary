@@ -8,6 +8,9 @@ void run(int Q_number) {
     case 2:
       Test_addTwoNumbers();
       break;
+    case 4:
+      Test_lengthOfLongestSubstring();
+      break;
     case 19:
       Test_removeNthFromEnd();
       break;

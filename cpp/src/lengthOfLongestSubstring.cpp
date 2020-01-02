@@ -1,6 +1,6 @@
 #include "test.h"
-#include <cstring>
 #include <set>
+#include <unordered_map>
 /** Question no.3 Medium
  * Author : Li-Han, Chen; 陳立瀚
  * Date   : 2nd, January, 2020 
@@ -31,6 +31,20 @@ int lengthOfLongestSubstring_BruteForce(std::string s) {
       if (tmp.size() > max_num)
         max_num = tmp.size();
     }
+  }
+  
+  return max_num;
+}
+
+int lengthOfLongestSubstring(std::string s) {
+  int max_num = 0;
+  std::unordered_map<char, int> map;
+  
+  for (int j=0, i=0; j<s.size();j++) {
+    if (map.find(s[j]) != map.end())
+      i = std::max(map[s[j]], i);
+    max_num = std::max(max_num, j-i+1);
+    map[s[j]] = j+1;
   }
   
   return max_num;
