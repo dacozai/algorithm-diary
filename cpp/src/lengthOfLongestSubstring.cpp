@@ -36,6 +36,12 @@ int lengthOfLongestSubstring_BruteForce(std::string s) {
   return max_num;
 }
 
+/** Solution
+ * Runtime 12 ms	MeMory 10.9 MB; 
+ * faster than 83.3%, less than 57.21% 
+ * O(N) O(N)
+*/
+
 int lengthOfLongestSubstring(std::string s) {
   int max_num = 0;
   std::unordered_map<char, int> map;
