@@ -18,6 +18,7 @@ void Test_lengthOfLongestSubstring();
 /* Question14 */
 std::string longestCommonPrefix(std::vector<std::string>&);
 bool same(std::vector<std::string>&, int);
+void Test_longestCommonPrefix();
 
 /* Question 19. removeNthFromEnd */
 ListNode* removeNthFromEnd(ListNode*, int);
