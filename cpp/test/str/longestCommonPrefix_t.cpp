@@ -12,20 +12,17 @@ void Test_longestCommonPrefix() {
 
   str_arr = {"dog","racecar","car"};
   goal = "";
-  assert(goal.compare(longestCommonPrefix(str_arr)) == 0);
+  assert(goal == longestCommonPrefix(str_arr));
 
   /* Empty Test */
   str_arr = {};
-  goal = "";
-  assert(goal.compare(longestCommonPrefix(str_arr)) == 0);
+  assert(goal == longestCommonPrefix(str_arr));
 
   str_arr = {""};
-  goal = "";
-  assert(goal.compare(longestCommonPrefix(str_arr)) == 0);
+  assert(goal == longestCommonPrefix(str_arr).c_str());
 
-  str_arr = {"", ""};
-  goal = "";
-  assert(goal.compare(longestCommonPrefix(str_arr)) == 0);
+  str_arr = {"",""};
+  assert(goal == longestCommonPrefix(str_arr).c_str());
 
   return;
 }
