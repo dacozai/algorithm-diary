@@ -15,6 +15,10 @@ void Test_addTwoNumbers();
 int lengthOfLongestSubstring(std::string);
 void Test_lengthOfLongestSubstring();
 
+/* Question14 */
+std::string longestCommonPrefix(std::vector<std::string>&);
+bool same(std::vector<std::string>&, int);
+
 /* Question 19. removeNthFromEnd */
 ListNode* removeNthFromEnd(ListNode*, int);
 void Test_removeNthFromEnd();

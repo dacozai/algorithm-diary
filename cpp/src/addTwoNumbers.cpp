@@ -14,7 +14,7 @@
 /** Solution
  * Runtime 20 ms	MeMory 10.4 MB; 
  * faster than 88.92%, less than 64.00% 
- * O (A+B) O(2)
+ * O (A+B) O(1)
 */
 ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
   int sum = 0;

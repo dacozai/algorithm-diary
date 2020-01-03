@@ -11,7 +11,7 @@
 /** Solution
  * Runtime 8 ms	MeMory 8.9 MB; 
  * faster than 78.46%, less than 27.05% 
- * O(A+B); O(2)
+ * O(A+B); O(1)
 */
 ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
   ListNode* p = new ListNode(0);
