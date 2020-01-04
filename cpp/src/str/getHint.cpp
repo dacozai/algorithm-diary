@@ -1,17 +1,26 @@
 #include "test.h"
-/** Question no.299 medium
+/** Question no.299 easy 
  * Author : Li-Han, Chen; 陳立瀚
  * Date   : 4th, January, 2019 
  * Source : https://leetcode.com/problems/bulls-and-cows/
- * Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
+ * You are playing the following Bulls and Cows game with your friend: 
+ * You write down a number and ask your friend to guess what the number is. 
+ * Each time your friend makes a guess, you provide a hint that indicates 
+ * how many digits in said guess match your secret number exactly in both digit and 
+ * position (called "bulls") and how many digits match the secret number but 
+ * locate in the wrong position (called "cows"). Your friend will use successive guesses and 
+ * hints to eventually derive the secret number.
  * 
- * Given an integer, convert it to a roman numeral. Input is guaranteed to be within the range from 1 to 3999.
+ * Write a function to return a hint according to the secret number and friend's guess, 
+ * use A to indicate the bulls and B to indicate the cows. 
+ * 
+ * Please note that both secret number and friend's guess may contain duplicate digits. 
  * 
 */
 
 /** Solution
- * Runtime 4 ms	MeMory 8.4 MB; 
- * faster than 94.24%, less than 94.74% 
+ * Runtime 0-4 ms	MeMory 8.8-8.9 MB; 
+ * faster than 94.24-100%, less than 94.74-100% 
  * O(N) O(1)
 */
 string getHint(std::string secret, std::string guess) {
