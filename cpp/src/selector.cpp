@@ -11,6 +11,9 @@ void run(int Q_number) {
     case 4:
       Test_lengthOfLongestSubstring();
       break;
+    case 12:
+      Test_intToRoman();
+      break;
     case 14:
       Test_longestCommonPrefix();
       break;
