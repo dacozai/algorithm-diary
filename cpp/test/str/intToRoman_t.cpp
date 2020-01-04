@@ -9,6 +9,9 @@ void Test_intToRoman() {
   /* LeetCode Test */
   assert("III" == intToRoman(3));
   assert("IV" == intToRoman(4));
+  assert("IX" == intToRoman(9));
+  assert("LVIII" == intToRoman(58));
+  assert("MCMXCIV" == intToRoman(1994));
 
   /* Domain test */
   assert("" == intToRoman(0));
@@ -16,7 +19,5 @@ void Test_intToRoman() {
 
   /* max test */
   assert("MMMCMXCIX" == intToRoman(3999));
-
-  std::cout << "It's over" << std::endl;
   return;
 }
