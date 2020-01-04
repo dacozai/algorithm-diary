@@ -23,7 +23,7 @@
  * faster than 94.24-100%, less than 94.74-100% 
  * O(N) O(1)
 */
-string getHint(std::string secret, std::string guess) {
+std::string getHint(std::string secret, std::string guess) {
   int m[10]={};
   int a=0, b=0;
   for (int i=0;i<secret.size();i++) {
