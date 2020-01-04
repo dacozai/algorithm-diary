@@ -87,9 +87,9 @@ int minCostII(std::vector<std::vector<int>>&);
 int minCostII_findMin(std::vector<int>&, bool, int);
 void Test_minCostII();
 
-
-
-
+/* Question 299  */
+string getHint(std::string, std::string);
+void Test_getHint();
 
 
 

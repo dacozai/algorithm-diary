@@ -53,6 +53,9 @@ void run(int Q_number) {
     case 265:
       Test_minCostII();
       break;
+    case 299:
+      Test_getHint();
+      break;
   }
   return;
 }
