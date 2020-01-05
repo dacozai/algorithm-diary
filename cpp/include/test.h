@@ -64,6 +64,11 @@ int maxProfit_II0(std::vector<int>&);
 int maxProfit_II(std::vector<int>&);
 void Test_maxProfitII();
 
+/*  Question 151 reverseWords*/
+std::string reverseWords(std::string);
+void Test_reverseWords();
+std::string reverseWords_StrStyle(std::string);
+
 /* Question 189 rotateArray */
 void rotate(std::vector<int>&, int);
 void Test_rotate();
