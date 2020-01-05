@@ -19,6 +19,12 @@
  * 
 */
 
+class ImmutableListNode {
+public:
+  void printValue(); // print the value of the node.
+  ImmutableListNode* getNext(); // return the next node.
+};
+
 /** Solution
  * Runtime 0-4 ms	MeMory 9.0 - 9.1 MB; 
  * faster than 100.00%, less than 100.00% 
