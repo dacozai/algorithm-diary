@@ -36,7 +36,7 @@ private:
 public:
     TicTacToe(int n) {
       for(int i=0; i<n; i++)
-        board.push_back(vector<char>(n, ' '));
+        board.push_back(std::vector<char>(n, ' '));
       side = n;
     }
     int move(int row, int col, int player) {

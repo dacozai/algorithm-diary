@@ -1,4 +1,5 @@
 #include <vector>
+#include <stack>
 #include <cstring>
 #include "general.h"
 
