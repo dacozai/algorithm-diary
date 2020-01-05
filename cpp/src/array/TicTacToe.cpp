@@ -1,7 +1,7 @@
 #include "test.h"
 /** Question no.348 medium - Design Tic-Tac-Toe
  * Author : Li-Han, Chen; 陳立瀚
- * Date   : 18th, December, 2019 
+ * Date   : 5th, January, 2019 
  * Source : https://leetcode.com/problems/design-tic-tac-toe/
  * Design a Tic-tac-toe game that is played between two players on a n x n grid.
  * 
