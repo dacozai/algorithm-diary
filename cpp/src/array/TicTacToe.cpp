@@ -16,58 +16,26 @@
 class TicTacToe {
 private:
   int side;
-  std::vector< std::vector<int> > board;
-  bool checkWin(int role) {
-    int ck = 0;
-    for (int i=0;i<side;i++) 
-      if (cursor(i,0,0,1,role)==side)
-        return true;
-    for (int i=0;i<side;i++) 
-      if (cursor(0,i,1,0,role)==side)
-        return true;
-    if (cursor(0,0,1,1,role)==side)
-        return true;
-    if (cursor(0,side-1,1,-1,role)==side)
-        return true;
-    return false;
+  std::vector< std::vector<char> > board;
+  bool checkWin(char symbol, int row, int col) {
+    return isConnected(row,0,0,1,symbol) || isConnected(0,col,1,0,symbol) ||\
+            isConnected(0,0,1,1,symbol) || isConnected(0,side-1,1,-1,symbol);
   }
-  
-  int cursor(int row, int col, int r_d, int c_d, int role) {
-    int tmp=0;
-    while (row < side && col < side) {
-      if (board[row][col] == role)
-        tmp++;
-      else
-        tmp=0;
-      row+=r_d;
-      col+=c_d;
-    }
-    return tmp;
+  bool isConnected(int row, int col, int r_d, int c_d, char symbol) {
+    for (;row < side && col < side;row+=r_d, col+=c_d)
+      if (board[row][col] != symbol)
+        return false;
+    return true;
   }
 public:
-    /** Initialize your data structure here. */
     TicTacToe(int n) {
-      for (int i=0;i<n;i++){
-        std::vector<int> tmp;
-        for (int j=0;j<n;j++)
-          tmp.push_back(0);
-        board.push_back(tmp);
-      }
+      for(int i=0; i<n; i++)
+        board.push_back(vector<char>(n, ' '));
       side = n;
     }
-    
-    /** Player {player} makes a move at ({row}, {col}).
-        @param row The row of the board.
-        @param col The column of the board.
-        @param player The player, can be either 1 or 2.
-        @return The current winning condition, can be either:
-                0: No one wins.
-                1: Player 1 wins.
-                2: Player 2 wins. */
     int move(int row, int col, int player) {
-      if(board[row][col] != 0)
-        throw std::invalid_argument( "received invalid position" );
-      board[row][col] = player;
-      return checkWin(player)?player:0;
+      char symbol = player==1?'X':'O';
+      board[row][col] = symbol;
+      return checkWin(symbol, row, col)?player:0;
     }
 };
