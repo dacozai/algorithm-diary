@@ -97,8 +97,9 @@ void Test_minCostII();
 std::string getHint(std::string, std::string);
 void Test_getHint();
 
-
-
+/* Question 1304 */
+std::vector<int> sumZero(int);
+void Test_sumZero();
 
 
 

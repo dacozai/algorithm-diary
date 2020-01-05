@@ -59,6 +59,9 @@ void run(int Q_number) {
     case 299:
       Test_getHint();
       break;
+    case 1304:
+      Test_sumZero();
+      break;
   }
   return;
 }
