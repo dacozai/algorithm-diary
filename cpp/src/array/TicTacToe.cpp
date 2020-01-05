@@ -16,6 +16,8 @@
  * Runtime 20-36 ms	MeMory 20-20.1 MB; 
  * faster than 99.90%, less than 100.00% 
  * O(n) ; O(n)
+ * Test 1. I have examined that in line 31, if we use while, it is the same.
+ * test 2. I tried to use double pointer instead of vector. The memory cost and speed still stay the same!
 */
 class TicTacToe {
 private:
