@@ -1,17 +1,21 @@
 #include "test.h"
-/** Question no.121 easy
+/** Question no.348 medium - Design Tic-Tac-Toe
  * Author : Li-Han, Chen; 陳立瀚
  * Date   : 18th, December, 2019 
- * Source : https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
- * Say you have an array for which the ith element is the price of a given stock on day i.
- * If you were only permitted to complete at most one transaction (i.e., buy one and sell one share of the stock),
- * design an algorithm to find the maximum profit. Note that you cannot sell a stock before you buy one. 
+ * Source : https://leetcode.com/problems/design-tic-tac-toe/
+ * Design a Tic-tac-toe game that is played between two players on a n x n grid.
+ * 
+ * You may assume the following rules:
+ * 
+ * A move is guaranteed to be valid and is placed on an empty block.
+ * Once a winning condition is reached, no more moves is allowed.
+ * A player who succeeds in placing n of their marks in a horizontal, vertical, or diagonal row wins the game.
 */
 
 /** BruteForce Solution
- * Runtime 828 ms	MeMory 9.4 MB; 
- * faster than 8.73%, less than 100.00% 
- * O(n^2) ; O(1)
+ * Runtime 20-36 ms	MeMory 20-20.1 MB; 
+ * faster than 99.90%, less than 100.00% 
+ * O(n) ; O(n)
 */
 class TicTacToe {
 private:
