@@ -19,7 +19,7 @@
  * faster than 100.00%, less than 100.0% 
  * O(n) ; O(1)
 */
-string freqAlphabets(string s) {
+std::string freqAlphabets(std::string s) {
   std::string ans = "";
   std::string tmp = "";
   for (char c: s) {

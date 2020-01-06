@@ -15,10 +15,10 @@
 */
 class Solution {
 private:
-  unordered_set<int> rowSet;
-  unordered_set<int> colSet;
+  std::unordered_set<int> rowSet;
+  std::unordered_set<int> colSet;
 public:
-  void setZeroes(vector<vector<int>>& matrix) {
+  void setZeroes(std::vector<std::vector<int>>& matrix) {
     int RLEN = matrix.size(), CLEN = matrix[0].size();
     for (int i=0;i<RLEN;i++) {
       for (int j=0;j<CLEN;j++) {
@@ -34,8 +34,8 @@ public:
       removeRow(matrix, 0, elem, true, RLEN, CLEN);
   }
   
-  void removeRow(vector<vector<int>>& mat, int posX, int posY, bool C_flag, int xLen, int yLen) {
-    vector<int> dd {0,1};
+  void removeRow(std::vector<std::vector<int>>& mat, int posX, int posY, bool C_flag, int xLen, int yLen) {
+    std::vector<int> dd {0,1};
     if (C_flag) dd = {1,0};
     for (; posX<xLen && posY<yLen;posX+=dd[0],posY+=dd[1])
       mat[posX][posY] = 0;

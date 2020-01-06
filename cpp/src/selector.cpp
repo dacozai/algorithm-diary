@@ -62,6 +62,9 @@ void run(int Q_number) {
     case 1304:
       Test_sumZero();
       break;
+    case 1309:
+      Test_freqAlphabets();
+      break;
   }
   return;
 }

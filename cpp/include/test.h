@@ -1,6 +1,7 @@
 #include <vector>
 #include <stack>
 #include <cstring>
+#include <unordered_set>
 #include "general.h"
 
 /* Question 1. twoSum */
@@ -100,6 +101,11 @@ void Test_getHint();
 /* Question 1304 */
 std::vector<int> sumZero(int);
 void Test_sumZero();
+
+/* Question 1309 */
+std::string freqAlphabets(std::string);
+void Test_freqAlphabets();
+
 
 
 
