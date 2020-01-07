@@ -86,6 +86,10 @@ void Test_reverseList();
 /* Question 237 deleteNode */
 void deleteNode(ListNode*);
 
+/* Question 238 deleteNode */
+std::vector<int> productExceptSelf(std::vector<int>&);
+void Test_productExceptSelf();
+
 /* Question 256  */
 int minCost(std::vector<std::vector<int>>&);
 
