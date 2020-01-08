@@ -102,6 +102,10 @@ void Test_minCostII();
 std::string getHint(std::string, std::string);
 void Test_getHint();
 
+/* Question 1161 */
+int maxLevelSum(TreeNode*);
+void searchLevel(TreeNode*, unordered_map<int, int>&, int);
+
 /* Question 1304 */
 std::vector<int> sumZero(int);
 void Test_sumZero();
