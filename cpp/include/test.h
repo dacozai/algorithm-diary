@@ -104,7 +104,7 @@ void Test_getHint();
 
 /* Question 1161 */
 int maxLevelSum(TreeNode*);
-void searchLevel(TreeNode*, unordered_map<int, int>&, int);
+void searchLevel(TreeNode* root, std::vector<int> vec, int l_w);
 
 /* Question 1304 */
 std::vector<int> sumZero(int);
