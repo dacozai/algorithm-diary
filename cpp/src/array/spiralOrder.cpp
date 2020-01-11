@@ -15,6 +15,9 @@
 */
 
 std::vector<int> spiralOrder(std::vector<std::vector<int>>& matrix) {
+  std::ios::sync_with_stdio(false);
+  std::cin.tie(nullptr);
+  std::cout.tie(nullptr);
   int delta[4][2] = {{0,1}, {1,0}, {0,-1},{-1,0}};
   std::vector<int> v;
   int *p = new int[2];
