@@ -1,7 +1,7 @@
 #include "test.h"
 /** Question no.289 medium - Game of Life
  * Author : Li-Han, Chen; 陳立瀚
- * Date   : 5th, January, 2019 
+ * Date   : 5th, January, 2020 
  * Source : https://leetcode.com/problems/game-of-life/
  * Given a board with m by n cells, each cell has an initial state live (1) or dead (0). 
  * Each cell interacts with its eight neighbors (horizontal, vertical, diagonal) using 

@@ -1,7 +1,7 @@
 #include "test.h"
 /** Question no.14 easy
  * Author : Li-Han, Chen; 陳立瀚
- * Date   : 3rd, January, 2019 
+ * Date   : 3rd, January, 2020 
  * Source : https://leetcode.com/problems/longest-common-prefix/
  * Write a function to find the longest common prefix string amongst an array of strings.
  * 

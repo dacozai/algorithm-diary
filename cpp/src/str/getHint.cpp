@@ -1,7 +1,7 @@
 #include "test.h"
 /** Question no.299 easy 
  * Author : Li-Han, Chen; 陳立瀚
- * Date   : 4th, January, 2019 
+ * Date   : 4th, January, 2020 
  * Source : https://leetcode.com/problems/bulls-and-cows/
  * You are playing the following Bulls and Cows game with your friend: 
  * You write down a number and ask your friend to guess what the number is. 
