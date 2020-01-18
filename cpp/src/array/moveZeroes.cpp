@@ -1,10 +1,11 @@
 #include "test.h"
-/** Question no 54. medium Spiral Matrix
+/** Question 283. easy Move Zeroes
  * Author : Li-Han, Chen; 陳立瀚
- * Date   : 15th, January, 2020
- * Source : https://leetcode.com/problems/spiral-matrix/
+ * Date   : 17th, January, 2020
+ * Source : https://leetcode.com/problems/move-zeroes/
  * 
- * Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order.
+ * Given an array nums, write a function to move all 0's to the end of it 
+ * while maintaining the relative order of the non-zero elements.
  * 
 */
 
