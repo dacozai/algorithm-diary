@@ -1,5 +1,5 @@
 #include "test.h"
-/** Question no 268 easy - Missing Number
+/** Question no 118	easy - Pascal's Triangle    
  * Author : Li-Han, Chen; 陳立瀚
  * Date   : 19th, January, 2020
  * Source : https://leetcode.com/problems/pascals-triangle/

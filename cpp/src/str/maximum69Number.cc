@@ -1,5 +1,5 @@
 #include "test.h"
-/** Question no 268 easy - Missing Number
+/** Question no 1323. easy - Maximum 69 Number
  * Author : Li-Han, Chen; 陳立瀚
  * Date   : 19th, January, 2020
  * Source : https://leetcode.com/problems/maximum-69-number/
@@ -11,8 +11,8 @@
 */
 
 /** Solution
- * Runtime 0 ms	MeMory 8.8 MB; 
- * faster than 100.00%, less than 82.35%
+ * Runtime 0 ms	MeMory 8.6 MB; 
+ * faster than 100.00%, less than 100.00%
  * O(n) ; O(1)
 */
 
