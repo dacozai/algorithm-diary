@@ -1,5 +1,5 @@
 #include "test.h"
-/** Question no 94 medium Binary Tree Inorder Traversal 
+/** Question no 1281 easy Subtract the Product and Sum of Digits of an Integer
  * Author : Li-Han, Chen; 陳立瀚
  * Date   : 23th, January, 2020
  * Source : https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/
