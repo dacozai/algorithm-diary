@@ -1,19 +1,16 @@
 #include "test.h"
-/** Question no 590 easy N-ary Tree Postorder Traversal
+/** Question no 145 hard Binary Tree Postorder Traversal
  * Author : Li-Han, Chen; 陳立瀚
- * Date   : 20th, January, 2020
- * Source : https://leetcode.com/problems/n-ary-tree-postorder-traversal/
+ * Date   : 24th, January, 2020
+ * Source : https://leetcode.com/problems/binary-tree-postorder-traversal/
  * 
- * Given an n-ary tree, return the postorder traversal of its nodes' values.
- * 
- * Nary-Tree input serialization is represented in their level order traversal, 
- * each group of children is separated by the null value (See examples). 
+ * Given a binary tree, return the postorder traversal of its nodes' values.
  * 
 */
 
 /** Solution
- * Runtime 64 ms	MeMory 62 MB; 
- * faster than 69.51%, less than 20.00%
+ * Runtime 0 ms	MeMory 8.6 MB; 
+ * faster than 100.00%, less than 100.00%
  * O(n) ; O(n)
 */
 class Node {
