@@ -19,17 +19,17 @@ int findBestValue(std::vector<int>& arr, int target) {
   std::cout.tie(nullptr);
   /* Varialbes */
   int LEN = arr.size(), ANS, Total_gap=0, smaller_nums=0;
-  double tmp_ans = (double)target/LEN;
-  
+  double tmp_ans = (double)target/LEN, max_num = 0.0d;
   ANS = (tmp_ans-(int)tmp_ans)>0.5?tmp_ans+1:tmp_ans;
+  
   for (auto e: arr) {
     if (e <= ANS) {
       Total_gap += ANS-e;
       smaller_nums++;
     }
+    max_num = max(max_num, (double)e);
   }
 
-  if (smaller_nums == 0) return ANS;
-  tmp_ans = (double) (abs(target-ANS*LEN)+Total_gap)/(LEN-smaller_nums);
-  return ANS+tmp_ans;
+  tmp_ans = (abs(target-ANS*LEN)+Total_gap)/(LEN-smaller_nums);
+  return min(max_num, ANS+tmp_ans);
 }
