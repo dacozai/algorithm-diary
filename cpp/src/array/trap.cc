@@ -10,7 +10,7 @@
 */
 
 /** Solution (Dynamic Programming)
- * Runtime 4 ms	MeMory 9.5 MB; 
+ * Runtime 0 ms	MeMory 9.5 MB; 
  * faster than 100.00%, less than 100% 
  * O(n) ; O(n)
 */
