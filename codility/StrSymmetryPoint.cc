@@ -1,6 +1,7 @@
 /** Resources: https://app.codility.com/programmers/lessons/99-future_training/str_symmetry_point/
  * Score: 100% 
  */
+
 int solution(string &S) {
     if (S.size() == 1)  return 0;
     if (S.size()%2 == 0)  return -1;
