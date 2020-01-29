@@ -10,12 +10,29 @@
 */
 
 /** Solution (Dynamic Programming)
- * Runtime 0 ms	MeMory 9.5 MB; 
- * faster than 100.00%, less than 100% 
- * O(n) ; O(n)
+ * Runtime 0 ms	MeMory 9 MB; 
+ * faster than 100.00%, less than 91.14% 
+ * O(n) ; O(1)
 */
-
 int trap(vector<int>& height) {
+    int sz = height.size(), ans=0;
+    int zo_max=0, yo_max=0, zo=0, yo=sz-1;
+
+    while (zo < yo) {
+        if (height[zo]<height[yo]) {
+        (height[zo] > zo_max)? zo_max=height[zo] : ans+=zo_max-height[zo];
+        zo++;
+        } else {
+        (height[yo] > yo_max)? yo_max=height[yo] : ans+=yo_max-height[yo];
+        yo--;
+        }
+    }
+
+    return ans;
+}
+
+/*O(n), O(n)*/
+int trap_dp(vector<int>& height) {
   if(height.size() == 0)  return 0;
   int ans = 0;
   int LEN = height.size();
