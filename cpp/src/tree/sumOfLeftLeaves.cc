@@ -1,7 +1,7 @@
 #include "test.h"
 /** Question no 404 easy Sum of Left Leaves
  * Author : Li-Han, Chen; 陳立瀚
- * Date   : 1st, February, 2020
+ * Date   : 2nd, February, 2020
  * Source : https://leetcode.com/problems/sum-of-left-leaves/
  * 
  * Implement strStr().
