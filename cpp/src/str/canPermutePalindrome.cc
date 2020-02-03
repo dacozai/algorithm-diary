@@ -10,7 +10,7 @@
  * 
 */
 
-/** Solution (Classic)
+/** Solution
  * Runtime 0 ms	MeMory 8.4 MB; 
  * faster than 100.00%, less than 75.00%
  * O(n) ; O(1)
