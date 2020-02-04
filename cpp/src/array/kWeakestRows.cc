@@ -15,8 +15,8 @@
 */
 
 /** Solution
- * Runtime 8 ms	MeMory 10.3 MB; 
- * faster than 97.96%, less than 100.00%
+ * Runtime 180 ms	MeMory 38.5 MB; 
+ * faster than 96.34%, less than 100.00%
  * O(n) ; O(1)
 */
 
