@@ -3,7 +3,7 @@
 #include <unordered_map>
 /** Question no 1338 medium Reduce Array Size to The Half
  * Author : Li-Han, Chen; 陳立瀚
- * Date   : 4th, February, 2020
+ * Date   : 4th, February, 2020 
  * Source : https://leetcode.com/contest/weekly-contest-174/problems/reduce-array-size-to-the-half/
  * 
  * Given an array arr.  You can choose a set of integers and remove all the occurrences of these integers in the array.
