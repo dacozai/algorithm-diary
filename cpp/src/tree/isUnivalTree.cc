@@ -14,7 +14,7 @@
 /** Solution
  * Runtime 0 ms	MeMory 10.7 MB; 
  * faster than 100.00%, less than 100.00%
- * O(n) ; O(n)
+ * O(n) ; O(H), height of the tree
 */
 
 bool isUnivalTree(TreeNode* root) {
