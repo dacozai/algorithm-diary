@@ -20,7 +20,7 @@ class Solution {
 private:
   int row, col;
 public:
-  int numIslands(std::vector<std::vector<char>>& grid) {
+  int numIslands_dfs(std::vector<std::vector<char>>& grid) {
     this->row = grid.size();
     if (this->row == 0) return 0;
     this->col = grid[0].size();
@@ -41,14 +41,14 @@ public:
     return ans;
   }
   
-  bool canNotMove(int r, int c) {
+  bool canNotMove_dfs(int r, int c) {
     if (r<0 || r>=this->row)  return true;
     if (c<0 || c>=this->col)  return true;
     return false;
   }
   
   void dfs(vector<vector<char>>& grid, int r, int c) {
-    if (canNotMove(r,c))  return;
+    if (canNotMove_dfs(r,c))  return;
     if (grid[r][c] == '0') return;
     grid[r][c] = '0';
     dfs(grid, r-1, c  );
