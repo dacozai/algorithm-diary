@@ -10,55 +10,6 @@
  * 
 */
 
-
-/** Solution (bfs)
- * Runtime 8 ms	MeMory 11.4 MB; 
- * faster than 99.15%, less than 25.84%
- * O(r*c) ; O(min(r,c)) 
-*/
-
-int numIslands_bfs(std::vector<std::vector<char>>& grid) {
-  int row = grid.size();
-  if (!row) return 0;
-  int col = grid[0].size();
-  int ans = 0;
-  
-  for (int i=0;i<row;i++) {
-    for (int j=0;j<col;j++) {
-      if (grid[i][j] == '1') {
-        ans++;
-        std::queue<std::pair<int, int>> neigh;
-        grid[i][j] = '0';
-        neigh.push({i,j});
-        while(!neigh.empty()) {
-          auto obj = neigh.front();
-          neigh.pop();
-          int r=obj.first, c=obj.second;
-          if (r-1>=0 && grid[r-1][c] == '1') {
-            grid[r-1][c] = '0';
-            neigh.push({r-1, c});
-          }
-          if (r+1<row && grid[r+1][c] == '1') {
-            grid[r+1][c] = '0';
-            neigh.push({r+1, c});
-          }
-          if (c-1>=0 && grid[r][c-1] == '1') {
-            grid[r][c-1] = '0';
-            neigh.push({r, c-1});
-          }
-          if (c+1<col && grid[r][c+1] == '1') {
-            grid[r][c+1] = '0';
-            neigh.push({r, c+1});
-          }
-        }
-      }
-    }
-  }
-  
-  return ans;
-}
-
-
 /** Solution (dfs)
  * Runtime 8 ms	MeMory 10.8 MB; 
  * faster than 99.15%, less than 80.9%
