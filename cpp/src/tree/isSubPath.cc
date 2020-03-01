@@ -14,7 +14,7 @@
 */
 
 /** Solution
- * Runtime 0 ms	MeMory 10.7 MB; 
+ * Runtime 25 ms	MeMory 24 MB; 
  * faster than 100.00%, less than 100.00%
  * O(n) ; O(n), height of the tree
 */
