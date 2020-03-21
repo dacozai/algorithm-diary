@@ -35,12 +35,12 @@ int maxNumberOfFamilies(int n, std::vector<std::vector<int>>& reservedSeats) {
     
     if (col == 4 || col == 5) mp[row]%=2;
     else if (col == 6 || col == 7) {
-      mp[row]/=4;
-      mp[row]*=4;
-    } else if ((col == 2 || col == 3) && mp[row]>3) mp[row]-=4;
+      mp[row]>>=2;
+      mp[row]<<=2;
+    } else if ((col == 2 || col == 3) && mp[row]>3) mp[row]%=4;
     else if (col == 8 || col == 9) {
-      mp[row]/=2;
-      mp[row]*=2;
+      mp[row]>>=1;
+      mp[row]<<=1;
     } else continue;
     
     if (bf-mp[row] == 0) continue;
