@@ -13,23 +13,20 @@
 */
 
 /** Solution (Greedy)
- * Runtime 12 ms	MeMory 9.7 MB; 
+ * Runtime 4 ms	MeMory 7 MB; 
  * faster than 80.7%, less than 15.15%
- * O(n^2) ; O(1) 
+ * O(n) ; O(1) 
 */
 
 int canCompleteCircuit(std::vector<int>& gas, std::vector<int>& cost) {
-  for (int i=0;i<gas.size();i++) {
-    int ct=i, p=0;
-    int g=0, c=0;
-    while (p<gas.size()) {
-      g+=gas[ct%gas.size()];
-      c+=cost[ct%cost.size()];
-      ct++;
-      p++;
-      if (g<c)  break;
+  int sz=gas.size() ,total=0, pos=0, cutPt=0;
+  for (int i=0;i<sz;i++) {
+    total += gas[i]-cost[i];
+    cutPt += gas[i]-cost[i];
+    if (cutPt < 0) {
+      pos=i+1;
+      cutPt = 0;
     }
-    if (g>=c) return i;
   }
-  return -1;
+  return total >= 0 ? pos : -1; 
 }
