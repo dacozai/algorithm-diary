@@ -1,3 +1,10 @@
+# Binary trees are already defined with this interface:
+# class Tree(object):
+#   def __init__(self, x):
+#     self.value = x
+#     self.left = None
+#     self.right = None
+
 def hasPathWithGivenSum(t, s):
     def dfs(node, s, n):
         if node is None:
